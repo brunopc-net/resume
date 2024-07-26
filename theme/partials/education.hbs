@@ -27,23 +27,25 @@
           </span>
           {{/if}}
         </div>
-        <div class="header-left">
+         {{#if area}}
+          <div class="area">
+            {{area}}
+          </div>
+          {{/if}}
           {{#if studyType}}
           <div class="studyType">
             {{studyType}}
           </div>
           {{/if}}
-          {{#if area}}
-          <div class="area">
-            {{area}}
-          </div>
-          {{/if}}
           {{#if institution}}
-          <div class="institution">
-            {{institution}}
-          </div>
+            {{#if url}}
+              <div class="institution">
+                <a target="_blank" href="{{url}}">{{institution}}</a>
+              </div>
+            {{else}}
+              <div class="institution">{{institution}}</div>
+            {{/if}}
           {{/if}}
-        </div>
       </header>
 
       {{#location}}

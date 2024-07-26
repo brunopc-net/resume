@@ -182,10 +182,6 @@ em {
   color: #757575;
 }
 
-blockquote {
-  margin-bottom: 1em;
-}
-
 strong {
   font-weight: 700;
 }
@@ -212,8 +208,21 @@ section .location {
   margin-top: 0.5rem;
 }
 
+
+
 #profiles .item {
   padding: 0;
+}
+
+#profiles .username {display: inline ;}
+#profiles .url-full {display: none ;}
+
+.project-item,
+.certificate-item,
+.education-item {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 33%;
 }
 
 #header > #profiles,
@@ -325,7 +334,6 @@ section .location {
 .position,
 .company,
 .organization,
-.institution,
 .date,
 .area,
 .studyType,
@@ -339,12 +347,12 @@ section .location {
 .area,
 .title,
 .language,
-.name {
+.name,
+.author {
   font-weight: 600;
 }
 
 .company::before,
-.institution::before,
 .organization::before,
 .awarder::before {
   content: "at ";
@@ -503,11 +511,11 @@ section .location {
 }
 
 #skills .item {
-  width: 16em;
+  width: 20.5em;
 }
 
 #skills .item .keywords {
-  width: 15em;
+  width: 20.5em;
 }
 
 /* Skill chart */
@@ -563,6 +571,9 @@ section .location {
   padding-left: 0.5em;
   border-left: 5px solid #ff6d1f;
 }
+.author {
+  margin-bottom: 1em;
+}
 
 .section > section > section {
   margin-bottom: 1rem;
@@ -592,11 +603,6 @@ section .location {
     width: 80%;
     margin: 0 auto;
   }
-  .section header .date {
-    float: right;
-    font-weight: 600;
-    color: #000;
-  }
 }
 
 /****************
@@ -615,11 +621,7 @@ section .location {
     opacity: 1;
     cursor: pointer;
   }
-  .section > section:not(.main-summary) {
-    margin-left: 1.67rem;
-  }
   .company::before,
-  .institution::before,
   .organization::before,
   .awarder::before {
     content: "| ";
@@ -641,9 +643,6 @@ section .location {
 }
 
 @media print {
-  #profiles a:not(.hide-href-print)::after{
-    content: " (" attr(href) ") ";
-  }
   #resume {
     margin: 0.1em;
     padding: 0.1em;
@@ -658,7 +657,6 @@ section .location {
     display: none;
   }
   .company::before,
-  .institution::before,
   .organization::before,
   .awarder::before {
     content: "at ";
@@ -717,11 +715,11 @@ section .location {
     width: calc(100% / 3);
     padding: 0;
   }
+  #skills .item .keywords{
+    width: 98%;
+  }
   .highlights {
     margin: 0.5em 0 0 0;
-  }
-  ul.keywords::before {
-    content: "Skills acquired: ";
   }
   #skills .keywords::before {
     content: none;
@@ -753,5 +751,11 @@ section .location {
   }
   .fa-location-dot:before {
     padding-left: 0.1em;
+  }
+  #profiles .url-full {display: inline ;}
+  #profiles .username,
+  #references,
+  .image {
+    display: none
   }
 }

@@ -62,11 +62,14 @@
 			{{#each profiles}}
 			<div class="item">
 				{{#if network}}
-				<div class="username">
+				<div>
 					<span class="fa-brands fa-{{spaceToDash network}} {{spaceToDash network}} social"></span>
 					{{#if url}}
-					<span class="url">
+					<span class="username">
 						<a target="_blank" href="{{url}}">{{username}}</a>
+					</span>
+					<span class="url-full">
+						<a target="_blank" href="{{url}}">{{url}}</a>
 					</span>
 					{{else}}
 					<span>{{username}}</span>
