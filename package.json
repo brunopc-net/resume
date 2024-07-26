@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-stackoverflow",
-  "version": "2.0.2",
-  "description": "Stack Overflow theme for JSON Resume",
-  "author": "Francesco Esposito",
+  "name": "jsonresume-theme-bufferbloat",
+  "version": "1.0.0",
+  "description": "Buffer Bloat theme for JSON Resume, forked on Francesco Esposito's jsonresume-theme-stackoverflow",
+  "author": "Bruno Pettersen-Coulombe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francescoes/jsonresume-theme-stackoverflow"
+    "url": "https://github.com/brunopc-net/jsonresume-theme-bufferbloat"
   },
   "license": "MIT",
   "main": "index.js",
