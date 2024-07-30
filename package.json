@@ -1,6 +1,7 @@
 {
   "name": "jsonresume-theme-bufferbloat",
   "version": "2.0.0",
+  "homepage": "https://brunopc-net.github.io/resume",
   "description": "React version of Francesco Esposito's jsonresume-theme-stackoverflow",
   "author": "Bruno Pettersen-Coulombe",
   "repository": {
