@@ -352,12 +352,6 @@ section .location {
   font-weight: 600;
 }
 
-.company::before,
-.organization::before,
-.awarder::before {
-  content: "at ";
-}
-
 .company,
 .institution,
 .organization,
@@ -621,11 +615,7 @@ section .location {
     opacity: 1;
     cursor: pointer;
   }
-  .company::before,
-  .organization::before,
-  .awarder::before {
-    content: "| ";
-  }
+
   .header-left {
     float: left;
     width: 70%;
@@ -703,8 +693,8 @@ section .location {
   }
   ul.keywords li::after,
   ul.courses li::after {
-    padding: 0 0 0 0.1rem;
-    content: " |";
+    padding: 0 0.5em 0 0.5em;
+    content: "|";
   }
   ul.keywords::before,
   ul.courses::before {
@@ -752,7 +742,9 @@ section .location {
   .fa-location-dot:before {
     padding-left: 0.1em;
   }
-  #profiles .url-full {display: inline ;}
+  #profiles .url-full {
+    display: inline ;
+  }
   #profiles .username,
   #references,
   .image {
