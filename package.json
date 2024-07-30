@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-bufferbloat",
-  "version": "1.0.2",
-  "description": "Buffer Bloat theme for JSON Resume, forked from Francesco Esposito's jsonresume-theme-stackoverflow",
+  "version": "2.0.0",
+  "description": "React version of Francesco Esposito's jsonresume-theme-stackoverflow",
   "author": "Bruno Pettersen-Coulombe",
   "repository": {
     "type": "git",
@@ -10,8 +10,29 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "handlebars": "^4.7.7",
-    "markdown-it": "^13.0.1",
-    "moment": "^2.29.2"
+    "axios": "^1.7.2",
+    "gh-pages": "^6.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
